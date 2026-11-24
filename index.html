@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Rove ToNote Reader</title>
+  <meta name="description" content="Read-only viewer for Rove ToNote documents on Google Drive">
+  <meta name="theme-color" content="#fffbeb" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#282a36" media="(prefers-color-scheme: dark)">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <img src="icons/icon.svg" alt="" width="28" height="28">
+      <span class="brand-name">ToNote Reader</span>
+      <span id="version" class="version"></span>
+    </div>
+    <button id="doc-btn" class="doc-btn" type="button" title="Open a different document">
+      <span id="doc-name" class="doc-name">No document</span>
+      <span class="doc-caret" aria-hidden="true">▾</span>
+    </button>
+    <div id="status" class="status" role="status" aria-live="polite"></div>
+    <button id="sync-btn" class="btn" type="button">Sign in</button>
+  </header>
+
+  <div class="layout">
+    <aside id="sidebar" class="sidebar" aria-label="Notes">
+      <div class="controls">
+        <input id="filter" type="search" placeholder="Filter notes…" autocomplete="off"
+               spellcheck="false" aria-label="Filter notes">
+        <div class="controls-row">
+          <span id="count" class="muted"></span>
+          <span class="tree-actions">
+            <button id="lock-btn" class="link-btn" type="button" hidden>Lock</button>
+            <button id="expand-btn" class="link-btn" type="button">Expand all</button>
+            <button id="collapse-btn" class="link-btn" type="button">Collapse all</button>
+          </span>
+        </div>
+      </div>
+      <ul id="tree" class="tree" role="tree"></ul>
+    </aside>
+
+    <div id="scrim" class="scrim"></div>
+    <main id="detail" class="detail" tabindex="-1"></main>
+  </div>
+
+  <dialog id="picker" class="picker">
+    <form method="dialog" class="picker-inner">
+      <div class="picker-head">
+        <h2>Open a document</h2>
+        <button class="icon-btn" value="cancel" aria-label="Close">✕</button>
+      </div>
+      <div id="picker-body" class="picker-body"></div>
+      <div class="picker-foot">
+        <label class="btn">
+          Open a file on this device…
+          <input id="file-input" type="file" accept=".tonote,application/json" hidden>
+        </label>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="version.js"></script>
+  <script src="config.js"></script>
+  <script src="vendor/marked.min.js"></script>
+  <script src="vendor/purify.min.js"></script>
+  <script src="app.js"></script>
+  <script src="https://accounts.google.com/gsi/client" async
+          onload="window.__gisLoaded = true; window.dispatchEvent(new Event('gis-loaded'))"></script>
+</body>
+</html>

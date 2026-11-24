@@ -1,0 +1,110 @@
+{
+  "formatVersion": 1,
+  "vault": {
+    "salt": "HemxomiwYVlgo/g6P02fsw==",
+    "kdfIterations": 210000,
+    "verifierIv": "dLXYYzCTBgYWbUsY",
+    "verifierCiphertext": "zurD/MmUTg4Vbqzrioj8vatmxjkUbyau/iRIB2jbwBi7S+Ejh+E/Wg=="
+  },
+  "notes": [
+    {
+      "id": "f1",
+      "parentId": null,
+      "title": "Personal",
+      "type": "folder",
+      "content": "",
+      "isEncrypted": false,
+      "sortOrder": 1024,
+      "createdAt": "2026-11-24T03:19:22.601Z",
+      "updatedAt": "2026-11-24T03:19:22.601Z"
+    },
+    {
+      "id": "m1",
+      "parentId": "f1",
+      "title": "Welcome",
+      "type": "markdown",
+      "content": "# Welcome\n\nThis is a **markdown** note with *formatting*, `inline code` and a [link](https://example.com).\n\n## A list\n\n- First item\n- Second item\n  - Nested item\n- [ ] An unchecked task\n- [x] A checked task\n\n## A table\n\n| Fruit | Color | Notes |\n| --- | --- | --- |\n| Apple | Red | Crunchy |\n| Banana | Yellow | Long text in a cell that keeps going so the table needs to wrap on a phone |\n\n> A quote block.\n\n```js\nconsole.log('code block');\n```\n",
+      "isEncrypted": false,
+      "sortOrder": 2048,
+      "createdAt": "2026-11-24T03:19:22.601Z",
+      "updatedAt": "2026-11-24T03:19:22.601Z"
+    },
+    {
+      "id": "t1",
+      "parentId": "f1",
+      "title": "To do",
+      "type": "todo",
+      "content": "<!-- tonote:todo meta v1 sortMode=\"priority\" -->\n\n- [ ] Renew passport <!-- tonote:item id=\"t1\" priority=\"high\" -->\n  - <!-- tonote:note id=\"tn1\" --> Form DS-82, see https://travel.state.gov\n    Bring two photos\n- [ ] Buy **milk** and eggs <!-- tonote:item id=\"t2\" priority=\"none\" -->\n- [ ] Call the dentist <!-- tonote:item id=\"t3\" priority=\"medium\" -->\n- [ ] Clean gutters <!-- tonote:item id=\"t4\" priority=\"low\" -->\n- [x] File taxes <!-- tonote:item id=\"t5\" priority=\"high\" completedAt=\"2026-04-10T12:00:00.000Z\" -->",
+      "isEncrypted": false,
+      "sortOrder": 3072,
+      "createdAt": "2026-11-24T03:19:22.601Z",
+      "updatedAt": "2026-11-24T03:19:22.601Z"
+    },
+    {
+      "id": "f2",
+      "parentId": "f1",
+      "title": "Trips",
+      "type": "folder",
+      "content": "",
+      "isEncrypted": false,
+      "sortOrder": 4096,
+      "createdAt": "2026-11-24T03:19:22.601Z",
+      "updatedAt": "2026-11-24T03:19:22.601Z"
+    },
+    {
+      "id": "m2",
+      "parentId": "f2",
+      "title": "Japan 2027",
+      "type": "markdown",
+      "content": "Flights booked.\n\n1. Tokyo\n2. Kyoto\n3. Osaka",
+      "isEncrypted": false,
+      "sortOrder": 5120,
+      "createdAt": "2026-11-24T03:19:22.601Z",
+      "updatedAt": "2026-11-24T03:19:22.601Z"
+    },
+    {
+      "id": "p1",
+      "parentId": null,
+      "title": "Passwords",
+      "type": "password-grid",
+      "content": "{\"iv\":\"d1eyjDofdZ7SIusZ\",\"ciphertext\":\"X0m2S6f+PxdjtvFQBci0Zzjk3iwFfw3XTT4NJQybMjPsR8/vqMcabr5E4kW9o+33dpHkWD1909mj2wSMp//WqHvBUDov2AX+665Q+ndrK4eowYqhYt4Zidv7qwOqPKUKGbyKz64vNF67WotBmjHBDSiDyay1pqJLN9bRuixzvf8bM9vBEGEVCZYmOVj2mBPIjpBChBORBW/oLzhVtxS+QTTgb9jFGtNhEFjdwHhLSktxfo9P4t4RkoiIVErtJusdJyLRVuXH+/HqiJtm5/7SnxjJx4Q9XEUd7x/F/BmILn9euVXjBkoqR/vt2ND6mPXi5ie5D0hAe8jIKToFLUtcbHWi6sgzpjCM6X0OcwjLqlxEgwdI6Q+UPdkreiZQpZnl5wSHG06GFmY7egPKcf/BzQPJRJ8TQhMJNGtOVyGMIicOhjIJS3RiWzh2MsFMEj4MATlIK6QjAVpV/zLrSBMpLALRWzVADUdJ2Ql/OgdL7Ue8Q4z5cRYLlFZJIdBRdZfEqX9mQo8zMVuEZu0g/3xn6e25FgsnMG1iDq7xNWxhU2wWbByadtAZWSLLAWE3DsvctOjF8nuL2aAXuoSJqbvCYRnIGIntqDsd1kSoGCCSgJ4J5Rjm1QgP6DwD1YEguJUC06WAYT5m/3kvCepBk47uvRbMGNXg1kYcyz5MFgUnE4vB/QGyQ/Q=\"}",
+      "isEncrypted": true,
+      "sortOrder": 6144,
+      "createdAt": "2026-11-24T03:19:22.601Z",
+      "updatedAt": "2026-11-24T03:19:22.601Z"
+    },
+    {
+      "id": "m3",
+      "parentId": null,
+      "title": "Secret diary",
+      "type": "markdown",
+      "content": "{\"iv\":\"v7S+74NQC+coMGjY\",\"ciphertext\":\"EsBsjjCe8QluniYc2LKtgfC/h7cfEZz9L0MrGnKD+CPz7UW8ttUxCYxGtZCnPg5lxeSOJD2XisqQ\"}",
+      "isEncrypted": true,
+      "sortOrder": 7168,
+      "createdAt": "2026-11-24T03:19:22.601Z",
+      "updatedAt": "2026-11-24T03:19:22.601Z"
+    },
+    {
+      "id": "m4",
+      "parentId": null,
+      "title": "Empty note",
+      "type": "markdown",
+      "content": "",
+      "isEncrypted": false,
+      "sortOrder": 8192,
+      "createdAt": "2026-11-24T03:19:22.601Z",
+      "updatedAt": "2026-11-24T03:19:22.601Z"
+    },
+    {
+      "id": "m5",
+      "parentId": null,
+      "title": "A note with a very long title that should be truncated in the tree view",
+      "type": "markdown",
+      "content": "Short body.",
+      "isEncrypted": false,
+      "sortOrder": 9216,
+      "createdAt": "2026-11-24T03:19:22.601Z",
+      "updatedAt": "2026-11-24T03:19:22.601Z"
+    }
+  ]
+}
